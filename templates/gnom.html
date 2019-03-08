@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>smokey</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+		<script src="{{ url_for('static', filename='script.js')}}"></script>
+	</head>
+	<body>
+		<div class="header">
+			<h1 class="headertext animated infinite pulse">smokey</h1>
+		</div>
+		<div class="row nav">
+			<div class="col">
+				<button><a href="/" class="navtext">Home</a></button>
+				<button><form action="/about" method="GET"><input type="submit" value="About"></form></button>
+				<button><form action="/saved" method="GET"><input type="submit" value="Saved"></form></button>
+				<p class="right-align">Hello{{ name }}!</p>
+			</div>
+		</div>
+
+				<p>Lmao you suck</p>
+				<img src="{{ url_for('static', filename='gnom.png')}}" width=256px height=256px class="animated infinite shake faster">
+				<p>you’ve been 『GNOMED』</p>
+	</body>
+</html>

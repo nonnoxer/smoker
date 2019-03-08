@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>smokey</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+		<script src="{{ url_for('static', filename='script.js')}}"></script>
+	</head>
+	<body>
+		<div class="header">
+			<h1 class="headertext animated infinite pulse">smokey</h1>
+		</div>
+		<div class="row nav">
+			<div class="col">
+				<button><a href="/" class="navtext">Home</a></button>
+				<button><form action="/about" method="GET"><input type="submit" value="About"></form></button>
+				<button><form action="/saved" method="GET"><input type="submit" value="Saved"></form></button>
+				<p class="right-align">Hello{{ name }}!</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-9"
+				<p>Welcome to the smokey! It will help you smoke some epic analyses for all your lit needs!</p>\
+				<p>{{ smoke }}</p>
+				<form action="/smoke" method="POST">
+					<label for="smoke">Smoke some stuff!</label>
+					<input type="submit" value="Smoke">
+				</form>
+			</div>
+			<div class="col-3"
+				<div id="signup">
+					<h2>Signup</h2>
+					<form action="/signup" method="POST">
+						<label for="username">Username: </label>
+						<input type="text" name="username" id="username">
+						<br>
+						<label for="hobby">Password: </label>
+						<input type="password" name="password" id="password">
+						<br>
+						<input type="submit" value="Submit">
+					</form>
+					<p>Have an account? <button onclick="login();">Login</button></p>
+				</div>
+			</div>
+	</body>
+</html>
