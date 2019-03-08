@@ -6,8 +6,8 @@ Smoker is a flask app that will randomly generate literary analyses from a set o
 
 ### Prerequisites
 
-[python 3](https://www.python.org/downloads/)
-[flask](http://flask.pocoo.org/)
+* [python 3](https://www.python.org/downloads/)
+* [flask](http://flask.pocoo.org/)
 
 ### Installing
 
