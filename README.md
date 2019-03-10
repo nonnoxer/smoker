@@ -1,6 +1,6 @@
-# Smoker
+# Smokey
 
-Smoker is a flask app that will randomly generate literary analyses from a set of files.
+Smokey is a flask app that will randomly generate literary analyses from a set of files.
 
 ## Getting Started
 
@@ -14,7 +14,7 @@ Smoker is a flask app that will randomly generate literary analyses from a set o
 Download or clone the repository onto your computer
 
 ```
-git clone https://github.com/nonnoxer/smoker
+git clone https://github.com/nonnoxer/smokey
 ```
 
 Run server.py from from file explorer or terminal/command prompt
